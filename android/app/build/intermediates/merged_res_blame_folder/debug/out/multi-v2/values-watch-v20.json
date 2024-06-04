@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.cademobilev2.app-mergeDebugResources-30:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/natalieyeo/.gradle/caches/transforms-3/c7d0570b4a9c43e8974074d77f9cbc07/transformed/appcompat-1.4.2/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}

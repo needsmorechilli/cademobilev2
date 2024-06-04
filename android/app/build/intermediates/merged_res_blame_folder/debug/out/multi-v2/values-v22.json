@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.cademobilev2.app-mergeDebugResources-30:/values-v22/values-v22.xml",
+            "map": [
+                {
+                    "source": "/Users/natalieyeo/.gradle/caches/transforms-3/c7d0570b4a9c43e8974074d77f9cbc07/transformed/appcompat-1.4.2/res/values-v22/values-v22.xml",
+                    "from": {
+                        "startLines": "2,3,4,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,553",
+                        "endLines": "2,3,8,13",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,548,896"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,487",
+                        "endLines": "2,3,8,13",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,482,764"
+                    }
+                }
+            ]
+        }
+    ]
+}
