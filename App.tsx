@@ -13,6 +13,10 @@ import 'react-native-gesture-handler';
 
 import MainScreen from './screens/MainScreen';
 import LandingPage from './screens/LandingPage';
+import Hub from './screens/Hub';
+import CrewQuarters from './screens/CrewQuarters';
+import ShipStore from './screens/ShipStore';
+import BonkGame from './screens/BonkGame';
 
 const Stack = createStackNavigator();
 
@@ -33,16 +37,42 @@ function MainApp() {
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="LandingPage">
-        <Stack.Screen
-          name="LandingPage"
-          component={LandingPage}
-          options={{headerShown: false}}
-        />
-        <Stack.Screen name="MainApp" component={MainApp} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <ConnectionProvider
+      config={{commitment: 'processed'}}
+      endpoint={clusterApiUrl(RPC_ENDPOINT)}>
+      <AuthorizationProvider>
+        <NavigationContainer>
+          <Stack.Navigator initialRouteName="LandingPage">
+            <Stack.Screen
+              name="LandingPage"
+              component={LandingPage}
+              options={{headerShown: false}}
+            />
+            <Stack.Screen
+              name="Hub"
+              component={Hub}
+              options={{headerShown: false}}
+            />
+            <Stack.Screen
+              name="CrewQuarters"
+              component={CrewQuarters}
+              options={{headerShown: false}}
+            />
+            <Stack.Screen
+              name="ShipStore"
+              component={ShipStore}
+              options={{headerShown: false}}
+            />
+            <Stack.Screen
+              name="BonkGame"
+              component={BonkGame}
+              options={{headerShown: false}}
+            />
+            <Stack.Screen name="MainApp" component={MainApp} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </AuthorizationProvider>
+    </ConnectionProvider>
   );
 }
 

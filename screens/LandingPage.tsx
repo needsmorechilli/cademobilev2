@@ -1,22 +1,45 @@
 // screens/LandingPage.tsx
-import React from 'react';
+import React, {useRef, useState, useCallback} from 'react';
 import {StyleSheet, View, Text, Button, TouchableOpacity} from 'react-native';
-import SimpleText from '../components/SimpleText'; // Import the SimpleText component
 import AnimatedBackground from '../components/AnimatedBackground';
 import GradientText from '../components/GradientText';
-// import ImageSequence from 'react-native-image-sequence';
+import ConnectButton from '../components/ConnectButton';
+import {useAuthorization} from '../components/providers/AuthorizationProvider';
+import {transact} from '@solana-mobile/mobile-wallet-adapter-protocol-web3js';
+import {alertAndLog} from '../util/alertAndLog';
 
 import AlienAnimation from '../components/AlienAnimation';
 
-const images = [
-  require('../assets/images/alien_icon.png'),
-  require('../assets/images/alien_icon_smaller.png'),
-];
+const LandingPage = ({navigation}) => {
+  const connectButtonRef = useRef(null);
+  const {authorizeSession} = useAuthorization();
+  const [authorizationInProgress, setAuthorizationInProgress] = useState(false);
 
-const centerIndex = Math.round(images.length / 2);
-
-const LandingPage = () => {
-  console.log('Rendering LandingPage');
+  const handleConnectPress = useCallback(async () => {
+    try {
+      if (authorizationInProgress) {
+        return;
+      }
+      setAuthorizationInProgress(true);
+      const result = await transact(async wallet => {
+        const authResult = await authorizeSession(wallet);
+        return authResult;
+      });
+      setAuthorizationInProgress(false);
+      if (result) {
+        // Navigate to Hub and pass the wallet address
+        navigation.navigate('Hub', {
+          walletAddress: result.publicKey.toString(),
+        });
+      }
+    } catch (err: any) {
+      alertAndLog(
+        'Error during connect',
+        err instanceof Error ? err.message : err,
+      );
+      setAuthorizationInProgress(false);
+    }
+  }, [authorizationInProgress, authorizeSession, navigation]);
   return (
     <View style={styles.container}>
       <View style={styles.backgroundContainer}>
@@ -26,14 +49,9 @@ const LandingPage = () => {
         <Text style={styles.welcomeText}>Welcome to</Text>
         <GradientText style={styles.cadeText}>'CADE</GradientText>
       </View>
-      {/* <ImageSequence
-        images={images}
-        startFrameIndex={centerIndex}
-        style={{width: 50, height: 50}}
-      /> */}
       <AlienAnimation />
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.buttonBox}>
+        <TouchableOpacity style={styles.buttonBox} onPress={handleConnectPress}>
           <Text style={styles.playButton}>Play</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.buttonBox}>

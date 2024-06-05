@@ -54,6 +54,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>PressStart2P-Regular.ttf</string>
+		<string>CedarvilleCursive-Regular.ttf</string>
+		<string>Stamp.ttf</string>
 	</array>
 </dict>
 </plist>

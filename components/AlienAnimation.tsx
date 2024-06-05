@@ -44,8 +44,7 @@ const AlienAnimation = () => {
         resizeMode="contain"
       />
       <Animated.Image
-        source={require('../assets/images/alien_icon_flip
-        .png')}
+        source={require('../assets/images/alien_icon_flip.png')}
         style={[styles.image, {opacity: fadeAnim2}]}
         resizeMode="contain"
       />

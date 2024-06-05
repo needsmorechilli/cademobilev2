@@ -1,15 +1,25 @@
+// components/ConnectButton.tsx
 import {transact} from '@solana-mobile/mobile-wallet-adapter-protocol-web3js';
-import React, {ComponentProps, useState, useCallback} from 'react';
+import React, {
+  ComponentProps,
+  useState,
+  useCallback,
+  forwardRef,
+  useImperativeHandle,
+} from 'react';
 import {Button} from 'react-native';
 
 import {useAuthorization} from './providers/AuthorizationProvider';
 import {alertAndLog} from '../util/alertAndLog';
 
-type Props = Readonly<ComponentProps<typeof Button>>;
+type Props = Readonly<ComponentProps<typeof Button>> & {
+  onConnectPress?: () => void;
+};
 
-export default function ConnectButton(props: Props) {
+const ConnectButton = forwardRef(({onConnectPress, ...props}: Props, ref) => {
   const {authorizeSession} = useAuthorization();
   const [authorizationInProgress, setAuthorizationInProgress] = useState(false);
+
   const handleConnectPress = useCallback(async () => {
     try {
       if (authorizationInProgress) {
@@ -28,11 +38,18 @@ export default function ConnectButton(props: Props) {
       setAuthorizationInProgress(false);
     }
   }, [authorizationInProgress, authorizeSession]);
+
+  useImperativeHandle(ref, () => ({
+    onPress: handleConnectPress,
+  }));
+
   return (
     <Button
       {...props}
       disabled={authorizationInProgress}
-      onPress={handleConnectPress}
+      onPress={onConnectPress || handleConnectPress}
     />
   );
-}
+});
+
+export default ConnectButton;

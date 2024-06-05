@@ -2,8 +2,16 @@
   "migIndex": 1,
   "data": [
     {
+      "path": "assets/fonts/CedarvilleCursive-Regular.ttf",
+      "sha1": "7ef9e90cc18213b8779a16bc3fb84f1a6e610331"
+    },
+    {
       "path": "assets/fonts/PressStart2P-Regular.ttf",
       "sha1": "59caa00e6aac4573f51943e0bdd20c758eddbf4a"
+    },
+    {
+      "path": "assets/fonts/Stamp.ttf",
+      "sha1": "412600dc14a6bb8610072db43c1984f2a00bb051"
     }
   ]
 }
