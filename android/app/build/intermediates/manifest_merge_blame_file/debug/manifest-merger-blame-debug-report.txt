@@ -9,11 +9,11 @@
 9        android:targetSdkVersion="33" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/debug/AndroidManifest.xml:5:5-77
-11-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/debug/AndroidManifest.xml:5:22-75
+11-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/debug/AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:3:5-67
-12-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:3:22-64
+12-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:3:5-67
+12-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:3:22-64
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 13-->[com.facebook.flipper:flipper:0.125.0] /Users/natalieyeo/.gradle/caches/transforms-3/236929aa564a4c4dfa1b417642a2a2ae/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
 13-->[com.facebook.flipper:flipper:0.125.0] /Users/natalieyeo/.gradle/caches/transforms-3/236929aa564a4c4dfa1b417642a2a2ae/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:22-73
@@ -42,53 +42,53 @@
 26    </queries>
 27
 28    <application
-28-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:5:5-24:19
+28-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:5:5-24:19
 29        android:name="com.cademobilev2.MainApplication"
-29-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:6:7-38
+29-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:6:7-38
 30        android:allowBackup="false"
-30-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:10:7-34
+30-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:10:7-34
 31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 31-->[androidx.core:core:1.8.0] /Users/natalieyeo/.gradle/caches/transforms-3/c05643153a3974152bffe8dfdc79e0c1/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
 32        android:debuggable="true"
 33        android:icon="@mipmap/ic_launcher"
-33-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:8:7-41
+33-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:8:7-41
 34        android:label="@string/app_name"
-34-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:7:7-39
+34-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:7:7-39
 35        android:roundIcon="@mipmap/ic_launcher_round"
-35-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:9:7-52
+35-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:9:7-52
 36        android:theme="@style/AppTheme"
-36-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:11:7-38
+36-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:11:7-38
 37        android:usesCleartextTraffic="true" >
-37-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/debug/AndroidManifest.xml:8:9-44
+37-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/debug/AndroidManifest.xml:8:9-44
 38        <activity
-38-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/debug/AndroidManifest.xml:11:9-111
+38-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/debug/AndroidManifest.xml:11:9-111
 39            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-39-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/debug/AndroidManifest.xml:11:19-83
+39-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/debug/AndroidManifest.xml:11:19-83
 40            android:exported="false" />
-40-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/debug/AndroidManifest.xml:11:84-108
+40-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/debug/AndroidManifest.xml:11:84-108
 41        <activity
-41-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:12:7-23:18
+41-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:12:7-23:18
 42            android:name="com.cademobilev2.MainActivity"
-42-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:13:9-37
+42-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:13:9-37
 43            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-43-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:15:9-118
+43-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:15:9-118
 44            android:exported="true"
-44-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:18:9-32
+44-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:18:9-32
 45            android:label="@string/app_name"
-45-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:14:9-41
+45-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:14:9-41
 46            android:launchMode="singleTask"
-46-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:16:9-40
+46-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:16:9-40
 47            android:windowSoftInputMode="adjustResize" >
-47-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:17:9-51
+47-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:17:9-51
 48            <intent-filter>
-48-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:19:9-22:25
+48-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:19:9-22:25
 49                <action android:name="android.intent.action.MAIN" />
-49-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:20:13-65
-49-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:20:21-62
+49-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:20:13-65
+49-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:20:21-62
 50
 51                <category android:name="android.intent.category.LAUNCHER" />
-51-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:21:13-73
-51-->/Users/natalieyeo/Documents/repos/CadeMobileV2/android/app/src/main/AndroidManifest.xml:21:23-70
+51-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:21:13-73
+51-->/Users/natalieyeo/Documents/repos/bonkathon/cademobilev2/android/app/src/main/AndroidManifest.xml:21:23-70
 52            </intent-filter>
 53        </activity>
 54

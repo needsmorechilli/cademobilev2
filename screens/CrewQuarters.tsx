@@ -52,7 +52,7 @@ const CrewQuarters = ({route}) => {
         <TouchableOpacity
           style={[styles.clickableArea, {top: 450, left: 160}]}
           onPress={() =>
-            handlePress({name: 'User 1', Pets: 'None', Tickets: '112'})
+            handlePress({name: 'User 1', Prizes: 'None', Tickets: '112'})
           }
         />
         <TouchableOpacity
@@ -78,7 +78,7 @@ const CrewQuarters = ({route}) => {
                           ID: {formatWalletAddress(walletAddress)}
                         </Text>
                         <Text style={styles.modalPetsText}>
-                          Pets: {userData.Pets}
+                          Prizes: {userData.Prizes}
                         </Text>
                       </>
                     )}
